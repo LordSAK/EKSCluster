@@ -35,7 +35,7 @@ variable "INSTANCE_TYPES" {
 variable "VPC_ID" {
   type        = string
   description = "VPC ID of the VPC where cluster should be."
-  default     = "vpc-009a103bb8eea14d9"
+  default     = "vpc-01d4c978b2a9ae023"
 }
 
 variable "CLUSTER_NAME" {
@@ -87,11 +87,11 @@ variable "FORCE_DELETE" {
 variable "WORKERS_SUBNETS" {
   type        = list(string)
   description = "List of the subnets on which the worker nodes will be on."
-  default     = ["subnet-0e6f01edc1d7c4028", "subnet-0f2a9e5e4b5fb9671"]
+  default     = ["subnet-06ea7c1b162480758", "subnet-0416519b4bda4578f"]
 }
 
 variable "API_SUBNET" {
   type        = list(string)
   description = "List of Subnet on which the eks api server will be on."
-  default     = ["subnet-0e6f01edc1d7c4028", "subnet-0f2a9e5e4b5fb9671"]
+  default     = ["subnet-06ea7c1b162480758", "subnet-0416519b4bda4578f"]
 }

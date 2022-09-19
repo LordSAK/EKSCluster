@@ -35,13 +35,13 @@ pipeline {
 
         choice (name: 'CLUSTER_VERSION', choices: [ '1.20', '1.21', '1.19'], description: 'Kubernetes version in EKS.')
 
-        string (name: 'VPC_ID', defaultValue: 'vpc-009a103bb8eea14d9', description: 'VPC ID on which the cluster will be on.')
+        string (name: 'VPC_ID', defaultValue: 'vpc-01d4c978b2a9ae023', description: 'VPC ID on which the cluster will be on.')
 
         string (name: 'INSTANCE_TYPES', defaultValue: '["t2.medium"]', description: 'List of the instance type to create the nodegroup.')
 
-        string (name: 'API_SUBNET', defaultValue: '["subnet-0e6f01edc1d7c4028", "subnet-0f2a9e5e4b5fb9671"]', description: 'List of subnet for API server.')
+        string (name: 'API_SUBNET', defaultValue: '["subnet-06ea7c1b162480758", "subnet-0416519b4bda4578f"]', description: 'List of subnet for API server.')
 
-        string (name: 'WORKER_SUBNETS', defaultValue: '["subnet-0e6f01edc1d7c4028", "subnet-0f2a9e5e4b5fb9671"]', description: 'List of subnets for worker node.')
+        string (name: 'WORKER_SUBNETS', defaultValue: '["subnet-06ea7c1b162480758", "subnet-0416519b4bda4578f"]', description: 'List of subnets for worker node.')
 
         string (name: 'DESIRED_SIZE', defaultValue: '2', description: 'Desired size of the worker nodes.')
 
