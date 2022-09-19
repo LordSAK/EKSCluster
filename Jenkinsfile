@@ -23,7 +23,7 @@ pipeline {
 
     parameters {
         
-        choice (name: 'AWS_REGION', choices: [ 'us-east-1', 'ap-northeast-1', 'us-east-2'], description: 'Pick a Region. Defaults to ap-northeast-1')
+        choice (name: 'AWS_REGION', choices: [ 'us-west-2', 'ap-northeast-1', 'us-east-2'], description: 'Pick a Region. Defaults to ap-northeast-1')
         
         choice (name: 'ACTION', choices: ['plan', 'apply', 'destroy'], description: 'Run terraform plan / apply / destroy')
 
