@@ -2,7 +2,7 @@
 #variable "AWS_SECRET_KEY" {}
 
 variable "AWS_REGION" {
-  default = "us-east-1"
+  default = "us-west-2"
 }
 
 variable "API_PUBLIC_ACCESS" {
