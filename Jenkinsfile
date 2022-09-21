@@ -231,7 +231,7 @@ pipeline {
                                                     ]])
                                                 {
                                                     try {
-                                                        tfCmd('destroy', '-auto-approve')
+                                                        tfCmd('plan', '-destroy')
                                                     } catch (ex) {
                                                         currentBuild.result = "UNSTABLE"
                                                     }
