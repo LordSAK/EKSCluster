@@ -1,4 +1,4 @@
-variable "APP_NAME" {
+variable "CLUSTER_NAME" {
   type        = string
   description = "Name for the eks cluster."
   default     = "EKS_CLUSTER"
@@ -100,17 +100,17 @@ variable "AWS_REGION" {
 #  default = "us-west-2"
 #}
 
-#variable "API_PUBLIC_ACCESS" {
-#  default     = true
-#  type        = bool
-#  description = "Allow api server to be accessed using public endpoint."
-#}
+variable "API_PUBLIC_ACCESS" {
+  default     = true
+  type        = bool
+  description = "Allow api server to be accessed using public endpoint."
+}
 
-#variable "API_PRIVATE_ACCESS" {
-#  type        = bool
-#  default     = true
-#  description = "Allow API server to be accessed using private endpoint."
-#}
+variable "API_PRIVATE_ACCESS" {
+  type        = bool
+  default     = true
+  description = "Allow API server to be accessed using private endpoint."
+}
 
 #variable "ENABLED_CLUSTER_LOG_TYPES" {
 #  default = ["api", "audit", "authenticator", "controllerManager", "scheduler"]
