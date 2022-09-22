@@ -106,11 +106,11 @@ variable "API_PUBLIC_ACCESS" {
   description = "Allow api server to be accessed using public endpoint."
 }
 
-variable "API_PRIVATE_ACCESS" {
-  type        = bool
-  default     = true
-  description = "Allow API server to be accessed using private endpoint."
-}
+#variable "API_PRIVATE_ACCESS" {
+#  type        = bool
+#  default     = true
+#  description = "Allow API server to be accessed using private endpoint."
+#QWE23}
 
 #variable "ENABLED_CLUSTER_LOG_TYPES" {
 #  default = ["api", "audit", "authenticator", "controllerManager", "scheduler"]
