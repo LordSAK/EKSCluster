@@ -19,7 +19,7 @@ resource "time_sleep" "wait_100s" {
 }
 
 data "aws_eks_cluster_auth" "this" {
-  name = module.EKS_MASTER.CLUSTER_ID
+  name = module.EKS_MASTER.CLUSTER_NAME
 
 }
 
